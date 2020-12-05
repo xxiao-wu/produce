@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="cn" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>登录</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sign-in/">
+    <!-- Bootstrap core CSS -->
+<link th:href="@{/css/bootstrap.css}" rel="stylesheet">
+    <link th:href="@{/css/signin.css}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+  </head>
+  <body class="text-center">
+    <form class="form-signin" th:action="@{/login}"  method="post">
+  <h1 class="h3 mb-3 font-weight-normal">登录</h1>
+
+  <input type="text" name="username" class="form-control" th:placeholder="账号" required autofocus>
+
+  <input type="password" name="password" class="form-control" th:placeholder="密码" required>
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> 记住我
+    </label>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+  <p class="mt-5 mb-3 text-muted">&copy; 2020-2020</p>
+</form>
+</body>
+</html>
